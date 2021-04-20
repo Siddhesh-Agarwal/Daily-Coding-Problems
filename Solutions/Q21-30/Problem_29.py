@@ -6,6 +6,7 @@ Run-length encoding is a fast and simple method of encoding strings. The basic i
 Implement run-length encoding and decoding. You can assume the string to be encoded have no digits and consists solely of alphabetic characters. You can assume the string to be decoded is valid.
 '''
 
+# This function will decode an encoded string
 def RunLengthDecode(encoded):
     decoded = ""
     stored = 0
@@ -16,6 +17,7 @@ def RunLengthDecode(encoded):
             decoded += i * int(num)
     return decoded
 
+# This function will encode a decoded string
 def RunLengthEncode(decoded):
     char = decoded[0]
     counter = 0
@@ -29,6 +31,3 @@ def RunLengthEncode(decoded):
             counter = 1
     encoded = encoded + str(counter) + char
     return encoded
-
-if __name__ == '__main__':
-    print(RunLengthEncode('AAABB'))
