@@ -1,0 +1,11 @@
+# vscode stuff
+.vscode
+.vscode/*
+
+# C++ stuff
+*.exe
+*.dll
+
+# Python stuff
+*.pyc
+*/__pycache__/*
